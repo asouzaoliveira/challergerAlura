@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css\estilos.css">
 
+
+
 	<title>
 
 		Decodificador
@@ -13,6 +15,7 @@
 
 </head>
 
+<script src="javascript/logica.js"></script>
 
 <body class="fundoPagina">
 
@@ -24,7 +27,7 @@
 		</header>
 	
 	<div >
-		<input class="decodificado" type="text" name="" placeholder="Digite seu Texto"  spellcheck="true"  >
+		<input class="decodificado" id = "texto" type="text" name="" placeholder="Digite seu Texto"  spellcheck="true"  >
 
 
 
@@ -44,7 +47,7 @@
 		</textarea>
 		</div>
 		
-		<button class="copiar"><p class="textoBotaoCopiar">Copiar</p></button>
+		<button onclick="copyToClipBoard()" class="copiar"><p class="textoBotaoCopiar">Copiar</p></button>
 
 
 		
@@ -59,8 +62,8 @@
 	<div class="frame3">
 
 
-		<button class="criptografar"><p class="textoBotaoCriptografar">Cripitografar</p></button>
-		<button class="descripitografar"><p class="textoBotaoDescriptografar">descriptografar</p></button>
+		<button onclick="decodificar()" class="criptografar"><p class="textoBotaoCriptografar">Cripitografar</p></button>
+		<button onclick = "descodificar()" class="descripitografar"><p class="textoBotaoDescriptografar">descriptografar</p></button>
 
 	</div>
 
@@ -73,7 +76,12 @@
 		<p class="rodape">Turma T3 One-NextEducation</p>
 	</footer>
 
-	</div>
+	</div>	
+
+	
+
 
 </body>
+
+
 </html>
