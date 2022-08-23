@@ -58,7 +58,9 @@
     content.select();
     document.execCommand('copy');
 
-    alert("Copied!");
+    limpaText();
+
+    
 }
 
 
